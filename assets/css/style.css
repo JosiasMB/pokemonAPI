@@ -38,8 +38,11 @@ body {
 }
 
 /*Links on Navigation  */
+nav {
+  width: 100%;
+}
 nav a {
-  margin-right: 25px;
+  margin-right: 5px;
   color: black;
   text-decoration: none;
   border-bottom: 3px solid transparent;
@@ -109,7 +112,7 @@ input {
 
 /* Navigation */
 nav {
-  font-size: 20px;
+  font-size: 1.5rem;
   z-index: 100;
   position: static;
   letter-spacing: 3px;
@@ -153,4 +156,28 @@ nav {
 /* List of stats */
 #stats li {
   background-color: rgba(237, 230, 230, 0.478);
+}
+
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+  nav {
+    font-size: 1.1rem;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 8px;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    border-width: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .title h1{
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
