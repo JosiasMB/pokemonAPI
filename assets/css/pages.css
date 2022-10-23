@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+.container{
+  display: flex;
+  height: 100vh;
+}
+
+h1{
+  text-transform: capitalize;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+
+.imgPokemon{
+  border-right: solid;
+  border-color: rgb(239, 239, 240);
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  flex: 1;
+}
+.pokemonMoves{
+  flex-grow: 2;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+/* Navigation */
+nav {
+  font-size: 20px;
+  z-index: 100;
+  position:static;
+  letter-spacing: 3px;
+  padding: 20px;
+  width: 100vw;
+  background: rgb(255, 211, 36);
+  font-family: Verdana, sans-serif;
+  margin: 0%;
+  border: solid;
+  border-width: 15px;
+  border-color: rgb(15, 96, 210);
+
+}
+
+nav a {
+  margin-right: 25px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  color: white;
+}
+
+ul li {
+  list-style: none;
+  display:inline-block;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 17px;
+  margin: 5px;
+  padding: 6px;
+  width: 150px;
+  background: rgb(255, 211, 36);
+  border: solid;
+  border-width: 3px;
+  border-radius: 3px;
+  border-color: rgb(15, 96, 210)
+}
+
+h3{
+  width: 250px;
+  padding: 8px;
+  border: solid;
+  border-width: 5px;
+  border-radius: 3px;
+  border-color: rgb(15, 96, 210);
+  text-align: center;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0%;
+  margin-bottom: 5px;
+  background: rgb(255, 211, 36);
+}
+.nombreHabilidades{
+  text-align: center;
+}

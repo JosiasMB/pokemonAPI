@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/pokemon.png">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"rel="nofollow" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+  <nav id="nav">
+    <a href="index.html">HOME</a>
+    <a href="movimientos.html">MOVIMIENTOS</a>
+    <a href="Habilidades.html">HABILIDADES</a>
+</nav>
+    <div class="container">
+        <audio id="audio" controls hidden></audio>
+        <img src="assets/img/ash.gif" alt="ash" class="ash" id="ash">
+        <div class="lookUp">
+            <div class="title">
+                <h1>
+                    Busca un Pokemon
+                </h1>
+                <form id="form">
+                   <label id="name">Nombre</label> <input type="text" id="nombrePokemon"> <span><button id="button" class="boton">
+                Buscar</button></span>
+                </form>
+            </div>
+        </div>
+       
+       
+        <div class="card" id="card">
+            <img class="card-img-top" id="imageCard" src="assets/img/pokemon.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" id="pokemonName"></h5>
+              <p class="card-text">Stats Basicos:</p>
+            </div>
+            <ul class="list-group list-group-flush" id="stats">
+            </ul>
+            <!-- <div class="card-body">
+              <a href="movimientos.html" class="card-link">MOVIMIENTOS</a>
+              <a href="Habilidades.html" class="card-link">HABILIDADES</a>
+            </div> -->
+        </div>
+
+
+    </div>
+    <!-- Script -->
+    <script src="assets/App/script.js"></script>
+</body>
+</html>
