@@ -38,9 +38,6 @@ body {
 }
 
 /*Links on Navigation  */
-nav {
-  width: 100%;
-}
 nav a {
   margin-right: 5px;
   color: black;
@@ -122,7 +119,7 @@ nav {
   font-family: Verdana, sans-serif;
   margin: 0%;
   border: solid;
-  border-width: 8px;
+  border-width: 15px;
   border-color: rgb(15, 96, 210);
 }
 
