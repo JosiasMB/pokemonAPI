@@ -1,153 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-.ash{
-    display: none;
-    position: absolute;
-    width: 99%;
-    height: 90%;
-    z-index: 100;
-    margin: 0%;
-    padding: 0%;
+/* imagen of Ash that willl be display everytime an user click the "Buscar" button */
+/* By default the iamgen is hidden */
+.ash {
+  display: none;
+  position: absolute;
+  width: 99%;
+  height: 90%;
+  z-index: 100;
+  margin: 0%;
+  padding: 0%;
 }
 
-.see{
-    display: block;
+/* Class that will be used to show Ash imagen by adding it when clicking "Buscar" */
+.see {
+  display: block;
 }
+
+/* Body */
 body {
-    margin: 0%;
-    padding: 0%;
-    overflow-x: hidden;
-    background: url('../img/logo.svg.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(3px);
-
-
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+  background: url("../img/logo.svg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
 }
-.title h1{
-    font-family: 'Roboto Slab', serif;
-    font-weight:bolder;
-    margin: 5% 0 10px 0;
-    
+
+/*Links on Navigation  */
+nav a {
+  margin-right: 25px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
 }
+
+nav a:hover,
+nav a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+/* This is the title style (Busca un pokemon) */
+.title h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: bolder;
+  margin: 5% 0 10px 0;
+}
+/* label "Name" */
 .title label {
-    font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
 }
-input{
-    width: 200px;
-    height: 40px;
-    background: rgb(255, 211, 36);
-    border-width: 5px;
-    border-color: rgb(15, 96, 210);
-    border-radius: 5px;
+
+/* Text field style */
+input {
+  width: 200px;
+  height: 37px;
+  background: rgb(255, 211, 36);
+  border-width: 3px;
+  border-color: rgb(15, 96, 210);
+  border-radius: 5px;
 }
+
+/* Class boton (Buscar) */
 .boton {
-    text-align: center;
-    align-content: center;
-    cursor: pointer;
-    outline: none;
-    width: 80px;
-    height: 40px;
-    font-family: 'Roboto Slab', serif;
-    font-size: 15px;
-    color: rgb(11, 10, 10);
-    background: rgb(255, 211, 36);
-    border-width: 5px;
-    border-color: rgb(15, 96, 210);
-    border-radius: 5px;
-
-  }
-
-
-.boton:hover{
-    background: rgb(244, 232, 8);
-}
-.boton:active{
-    transform: translate(0, 0.3rem);
-    box-shadow: none;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+  outline: none;
+  width: 80px;
+  height: 37px;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  color: rgb(11, 10, 10);
+  background: rgb(255, 211, 36);
+  border-width: 3px;
+  border-color: rgb(15, 96, 210);
+  border-radius: 5px;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
-    padding: 0%;
+.boton:hover {
+  background: rgb(244, 232, 8);
 }
-
-.card-text{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: bold;
+.boton:active {
+  transform: translate(0, 0.3rem);
+}
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
 }
 
 /* Navigation */
 nav {
-    font-size: 20px;
-    z-index: 100;
-    position:static;
-    letter-spacing: 3px;
-    padding: 10px;
-    width: 100vw;
-    background: rgb(255, 211, 36);
-    font-family: Verdana, sans-serif;
-    margin: 0%;
-    border: solid;
-    border-width: 8px;
-    border-color: rgb(15, 96, 210);
-  
-  }
-  
-  nav a {
-    margin-right: 25px;
-    color: black;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    font-weight: bold;
-  }
-  
- nav a:hover,
- nav a:focus {
-    color: white;
-    text-decoration: none;
-  }
+  font-size: 20px;
+  z-index: 100;
+  position: static;
+  letter-spacing: 3px;
+  padding: 10px;
+  width: 100vw;
+  background: rgb(255, 211, 36);
+  font-family: Verdana, sans-serif;
+  margin: 0%;
+  border: solid;
+  border-width: 8px;
+  border-color: rgb(15, 96, 210);
+}
 
-  #card {
-    width: 20rem;
-    margin-top: 20px;
-    background-color: rgba(237, 230, 230, 0.478);
-  }
-  #imageCard{
-    width: 250px;
-    margin: 10px 0 0 30px;
-  }
+/* Card style */
+#card {
+  width: 20rem;
+  margin-top: 20px;
+  background-color: rgba(237, 230, 230, 0.478);
+}
 
-  #pokemonName{
-    text-align: center;
-    font-size: 30px;
-    text-transform: capitalize;
-    font-family: 'Roboto Slab', serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  .card-body{
-    margin: 0%;
-    background-color: rgba(237, 230, 230, 0.318);
+/* imagen on card */
+#imageCard {
+  width: 250px;
+  margin: 10px 0 0 30px;
+}
 
-  }
-  #stats li {
-    background-color: rgba(237, 230, 230, 0.478);
-
-  }
+/* Style of pokemon name on card */
+#pokemonName {
+  text-align: center;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* Style where is stored name and stats */
+.card-body {
+  margin: 0%;
+  background-color: rgba(237, 230, 230, 0.318);
+}
+/* List of stats */
+#stats li {
+  background-color: rgba(237, 230, 230, 0.478);
+}
