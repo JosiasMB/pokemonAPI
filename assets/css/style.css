@@ -155,7 +155,25 @@ nav {
   background-color: rgba(237, 230, 230, 0.478);
 }
 
-
+/* Clear pokemon button */
+.clearPokemon {
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  padding: 8px;
+  width: fit-content;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(11, 10, 10);
+  background: rgb(255, 211, 36);
+  border-width: 3px;
+  border-color: rgb(15, 96, 210);
+  border-radius: 5px;
+}
+.clearPokemon:active {
+  transform: translate(0, 0.3rem);
+}
 /* Responsive */
 @media screen and (max-width: 700px) {
   nav {
@@ -164,7 +182,6 @@ nav {
     letter-spacing: 1px;
     padding: 8px;
   }
-  
 }
 
 @media screen and (max-width: 500px) {
@@ -173,7 +190,7 @@ nav {
     font-size: 0.9rem;
     text-align: center;
   }
-  .title h1{
+  .title h1 {
     font-size: 1.8rem;
     text-align: center;
   }
