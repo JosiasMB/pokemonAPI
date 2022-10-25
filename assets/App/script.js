@@ -189,20 +189,21 @@ function limpiarDataFromUl(parent) {
   }
 }
 
-// Clear storage function
-function clearStorage() {
-  localStorage.removeItem("data");
-}
-
 // Event Listener
 button.addEventListener("click", getPokemon);
 audioElement.addEventListener("ended", toggleButton);
-clearPokemon.addEventListener("click", clearStorage);
 
-// Check local storage for previous data
-let data = localStorage.getItem("data");
+// // Check local storage for previous data
+let dataStorage = localStorage.getItem("data");
 
 // If local store has data we will display pokemon
-if (data) {
-  getPokemonFromAPI(data);
+if (dataStorage) {
+  getPokemonFromAPI(dataStorage);
 }
+
+// Clear storage function
+function clearStorage() {
+  localStorage.removeItem("data");
+  window.location.reload();
+}
+clearPokemon.addEventListener("click", clearStorage);

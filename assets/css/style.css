@@ -156,7 +156,7 @@ nav {
 }
 
 /* Clear pokemon button */
-.clearPokemon {
+#clearPokemon {
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -171,7 +171,7 @@ nav {
   border-color: rgb(15, 96, 210);
   border-radius: 5px;
 }
-.clearPokemon:active {
+#clearPokemon:active {
   transform: translate(0, 0.3rem);
 }
 /* Responsive */
