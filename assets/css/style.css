@@ -56,12 +56,16 @@ body {
 
 /* Text field style */
 .navInput input {
-  width: 300px;
+  width: 150px;
   height: 45px;
-  background: rgb(228, 228, 224);
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
   padding: 10px;
-  border: none;
-  margin: 0%;
+  border: solid;
+  border-width: 2px;
+  border-color: rgb(248, 1, 1);
+  border-radius: 5px 0 0 5px;
+  outline: none;
 }
 .navInput input:active {
   outline: none;
@@ -69,18 +73,17 @@ body {
 
 /* Class boton (Buscar) */
 .boton {
-  text-align: center;
-  align-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
   cursor: pointer;
-  outline: none;
-  width: 100px;
+  font-size: 0.9rem;
+  width: 70;
   height: 45px;
-  font-family: "Roboto Slab", serif;
-  font-size: 20px;
-  color: rgb(249, 249, 249);
-  background: rgb(247, 19, 7);
   border: none;
-  margin: 0;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  background: rgb(245, 7, 7);
+  outline: none;
 }
 
 .boton:hover {
@@ -182,23 +185,6 @@ body {
 /* #clearPokemon:active {
   transform: translate(0, 0.3rem);
 } */
-/* Responsive */
-@media screen and (max-width: 700px) {
-  nav {
-    font-size: 1.1rem;
-    text-align: center;
-    letter-spacing: 1px;
-    padding: 8px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  nav {
-    border-width: 5px;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-}
 
 /* ------------------------ Footer --------------------- */
 footer {
@@ -282,7 +268,7 @@ footer {
   text-decoration: underline;
 }
 
-/* Media Queries */
+/* Media Queries footer */
 
 @media (max-width: 600px) {
   .footer-distributed .footer-left,
@@ -295,5 +281,47 @@ footer {
   }
   .footer-distributed .footer-left p.footer-links {
     line-height: 1.8;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 741px) {
+  .logo {
+    width: 150px;
+  }
+  .logoDiv {
+    flex: 1;
+  }
+  .navInput {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 80px;
+    margin: 0%;
+  }
+  .boton {
+    width: 60px;
+    height: 30px;
+    padding: 0%;
+    font-size: 12px;
+    border: none;
+    border-radius: 0%;
+  }
+  .logoDiv {
+    flex: 1;
+  }
+  .navInput {
+    flex: 2;
+  }
+  .navInput input {
+    width: 120px;
+    border: none;
+    border-radius: 0%;
+    height: 30px;
+    font-size: 12px;
+    padding: 2px;
   }
 }
