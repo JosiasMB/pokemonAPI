@@ -3,21 +3,18 @@
 }
 
 body {
-  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0%;
   padding: 0%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(3px);
-  background-attachment: fixed;
 }
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
