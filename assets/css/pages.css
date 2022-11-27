@@ -7,13 +7,13 @@ body {
   margin: 0%;
   padding: 0%;
   height: 100vh;
-  background: url("../img/pages.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
+  background-attachment: fixed;
 }
 
 .container {
@@ -43,47 +43,77 @@ h1 {
 
 /* Navigation */
 nav {
-  font-size: 20px;
   z-index: 100;
-  position: static;
-  letter-spacing: 3px;
-  padding: 20px;
-  width: 100vw;
-  background: rgb(255, 211, 36);
-  font-family: Verdana, sans-serif;
+  top: 0;
   margin: 0%;
-  border: solid;
-  border-width: 15px;
-  border-color: rgb(15, 96, 210);
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
 }
 
+.one {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgb(34, 125, 6);
+  height: 100%;
+}
+.two {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgb(29, 68, 241);
+  height: 100%;
+}
+.three {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgb(255, 4, 4);
+  height: 100%;
+}
 nav a {
-  margin-right: 25px;
-  color: black;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: rgb(255, 253, 253);
   text-decoration: none;
-  border-bottom: 3px solid transparent;
   font-weight: bold;
+  font-size: 20px;
 }
 
 nav a:hover,
 nav a:focus {
   color: white;
 }
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 ul li {
   list-style: none;
-  display: inline-block;
   text-transform: capitalize;
   text-align: center;
-  font-size: 17px;
+  font-size: 15px;
   margin: 5px;
-  padding: 6px;
-  width: 150px;
+  padding: 10px;
+  width: 140px;
   background: rgb(255, 211, 36);
-  border: solid;
-  border-width: 3px;
-  border-radius: 3px;
-  border-color: rgb(15, 96, 210);
+  border: none;
+  border-radius: 5px;
 }
 
 li:hover {
@@ -92,12 +122,9 @@ li:hover {
 }
 
 h3 {
-  width: 250px;
+  width: auto;
   padding: 8px;
-  border: solid;
-  border-width: 5px;
-  border-radius: 3px;
-  border-color: rgb(15, 96, 210);
+  border: none;
   text-align: center;
   font-size: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -111,16 +138,12 @@ h3 {
 .nombreHabilidades {
   text-align: center;
 }
-#habilidades {
-  margin-left: auto;
-  margin-right: auto;
-  border: solid;
-  border-width: 5px;
-  border-radius: 3px;
-  border-color: rgba(15, 96, 210, 0.689);
-  width: fit-content;
+#movimientos {
+  border: none;
   padding: 10px;
-  background: rgba(255, 211, 36, 0.617);
+  margin: 0%;
+  font-size: 30px;
+  font-family: cursive;
 }
 
 h3:hover {
@@ -134,34 +157,31 @@ h3:hover {
   cursor: pointer;
   outline: none;
   padding: 8px;
-  width: fit-content;
+  width: 100%;
+  padding: 20px;
   font-family: "Roboto Slab", serif;
   font-weight: bold;
-  font-size: 15px;
-  color: rgb(11, 10, 10);
-  background: rgb(255, 211, 36);
-  border-width: 3px;
-  border-color: rgb(15, 96, 210);
-  border-radius: 5px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 4, 4);
+  border: none;
 }
 .clearPokemon:active {
   transform: translate(0, 0.3rem);
 }
 
+#imageCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100px;
+}
+
 /* Responsive */
 @media screen and (max-width: 1000px) {
-  nav {
-    font-size: 1.1rem;
-    border-width: 5px;
-    text-align: center;
-    letter-spacing: 1px;
-    padding: 8px;
-  }
-  body {
-    background: url("../img/1000.gif");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
 }
 
 @media screen and (max-width: 850px) {
@@ -203,5 +223,106 @@ h3:hover {
   ul li {
     width: 100px;
     font-size: 12px;
+  }
+  .clearPokemon {
+    font-size: 15px;
+  }
+}
+
+/* ------------------------ Footer --------------------- */
+footer {
+  margin-top: auto;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries footer */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
   }
 }

@@ -1,4 +1,4 @@
-const pokemonName = document.getElementById("pokemonName");
+// const pokemonName = document.getElementById("pokemonName");
 const image = document.getElementById("imageCard");
 const moves = document.getElementById("moves");
 const clearPokemon = document.getElementById("clearPokemon");
@@ -24,7 +24,7 @@ async function getMovimientosFromAPI(data) {
 
 // Function to display data on HTML
 function displayMove(pokemon) {
-  pokemonName.textContent = data;
+  // pokemonName.textContent = data;
   image.src = pokemon.sprites.other.dream_world.front_default;
   for (i = 0; i < pokemon.moves.length; i++) {
     let moveInfo = document.createElement("li");
