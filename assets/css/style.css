@@ -121,11 +121,12 @@ body {
   margin-top: 20px;
   background-color: rgba(237, 230, 230, 0.478);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 /* imagen on card */
 #imageCard {
-  width: 250px;
+  width: 200px;
   margin: 10px 0 0 30px;
 }
 
@@ -146,6 +147,7 @@ body {
 /* List of stats */
 #stats li {
   background-color: rgba(237, 230, 230, 0.478);
+  text-align: justify;
 }
 
 /* Movimientos y Habiliades button */

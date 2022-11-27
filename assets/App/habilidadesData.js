@@ -25,7 +25,7 @@ async function getHabilidadesFromAPI(data) {
 
 // Function to display data on HTML
 function displayMove(pokemon) {
-  pokemonName.textContent = data;
+  // pokemonName.textContent = data;
   image.src = pokemon.sprites.other.dream_world.front_default;
   for (i = 0; i < pokemon.abilities.length; i++) {
     let habilidades = document.createElement("h3");
